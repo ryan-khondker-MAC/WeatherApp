@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RC1-iX-x2e">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TrebuchetMS.ttf">
+            <string>TrebuchetMS</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ZipCodeViewController-->
+        <scene sceneID="RIc-ox-0hM">
+            <objects>
+                <viewController storyboardIdentifier="ZipCodeViewController" title="ZipCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RC1-iX-x2e" customClass="ZipCodeViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HbX-pJ-E9v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a Zip Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oMv-be-HUN">
+                                <rect key="frame" x="20" y="95" width="374" height="52"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9g1-wU-ccl">
+                                <rect key="frame" x="158.66666666666666" y="207" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="neX-BC-Agh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vk-aI-36k">
+                                <rect key="frame" x="153.66666666666666" y="245" width="106.99999999999997" height="30"/>
+                                <state key="normal" title="Verify Zip Code"/>
+                                <connections>
+                                    <action selector="verifyZipCodePressed:" destination="RC1-iX-x2e" eventType="touchUpInside" id="rI3-Tp-eaB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fn-zM-VXr">
+                                <rect key="frame" x="20" y="295" width="374" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXS-ML-1OF">
+                                <rect key="frame" x="159.66666666666666" y="346.66666666666669" width="95" height="30"/>
+                                <state key="normal" title="View Weather"/>
+                                <connections>
+                                    <action selector="viewWeatherPressed:" destination="RC1-iX-x2e" eventType="touchUpInside" id="XOV-2R-qWf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.18942599830000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WXS-ML-1OF" firstAttribute="top" secondItem="8fn-zM-VXr" secondAttribute="bottom" constant="25" id="3lp-7Q-wfm"/>
+                            <constraint firstItem="oMv-be-HUN" firstAttribute="leading" secondItem="Mkc-pb-mXK" secondAttribute="leading" constant="20" id="G3W-hR-k0B"/>
+                            <constraint firstItem="8fn-zM-VXr" firstAttribute="leading" secondItem="Mkc-pb-mXK" secondAttribute="leading" constant="20" id="HxU-g5-OL6"/>
+                            <constraint firstItem="9g1-wU-ccl" firstAttribute="top" secondItem="oMv-be-HUN" secondAttribute="bottom" constant="60" id="MKA-hR-Ab6"/>
+                            <constraint firstItem="Mkc-pb-mXK" firstAttribute="trailing" secondItem="oMv-be-HUN" secondAttribute="trailing" constant="20" id="OAm-FT-MKe"/>
+                            <constraint firstItem="oMv-be-HUN" firstAttribute="top" secondItem="Mkc-pb-mXK" secondAttribute="top" constant="75" id="Wim-wU-oCi"/>
+                            <constraint firstItem="Mkc-pb-mXK" firstAttribute="trailing" secondItem="8fn-zM-VXr" secondAttribute="trailing" constant="20" id="ZiK-Vh-878"/>
+                            <constraint firstItem="9g1-wU-ccl" firstAttribute="centerX" secondItem="HbX-pJ-E9v" secondAttribute="centerX" id="ef9-8u-Ya3"/>
+                            <constraint firstItem="4Vk-aI-36k" firstAttribute="top" secondItem="9g1-wU-ccl" secondAttribute="bottom" constant="8" id="gXM-W8-fHw"/>
+                            <constraint firstItem="8fn-zM-VXr" firstAttribute="top" secondItem="4Vk-aI-36k" secondAttribute="bottom" constant="20" id="nWh-db-mSL"/>
+                            <constraint firstItem="Mkc-pb-mXK" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WXS-ML-1OF" secondAttribute="bottom" constant="100" id="oZu-t1-pog"/>
+                            <constraint firstItem="WXS-ML-1OF" firstAttribute="centerX" secondItem="HbX-pJ-E9v" secondAttribute="centerX" id="s3a-Ng-tTZ"/>
+                            <constraint firstItem="4Vk-aI-36k" firstAttribute="centerX" secondItem="HbX-pJ-E9v" secondAttribute="centerX" id="y00-uk-D2w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mkc-pb-mXK"/>
+                    </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="8fn-zM-VXr" id="f87-mh-9w8"/>
+                        <outlet property="titleLabel" destination="oMv-be-HUN" id="hnv-fg-hcA"/>
+                        <outlet property="zipCodeField" destination="9g1-wU-ccl" id="8b5-Q2-gVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKf-ZO-vmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="-111"/>
+        </scene>
+    </scenes>
+</document>

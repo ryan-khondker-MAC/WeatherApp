@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2nF-Mu-5Ub">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TrebuchetMS.ttf">
+            <string>TrebuchetMS</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--WelcomeViewController-->
+        <scene sceneID="QR8-kF-isB">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" title="WelcomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EfW-d9-Fw8" customClass="WelcomeViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FH1-a4-a8J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eHD-iv-7qe">
+                                <rect key="frame" x="20" y="95" width="374" height="51.666666666666657"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="57d-me-5IW">
+                                <rect key="frame" x="20" y="196.66666666666666" width="374" height="489.33333333333337"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49803921568627452" blue="0.1894259982638889" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MmX-Xw-pAj" firstAttribute="bottom" secondItem="57d-me-5IW" secondAttribute="bottom" constant="50" id="5Lq-h1-ydg"/>
+                            <constraint firstItem="eHD-iv-7qe" firstAttribute="top" secondItem="MmX-Xw-pAj" secondAttribute="top" constant="75" id="LO1-TD-4ky"/>
+                            <constraint firstItem="57d-me-5IW" firstAttribute="leading" secondItem="MmX-Xw-pAj" secondAttribute="leading" constant="20" id="PG2-Xo-1UE"/>
+                            <constraint firstItem="57d-me-5IW" firstAttribute="top" secondItem="eHD-iv-7qe" secondAttribute="bottom" constant="50" id="VoE-i0-z5P"/>
+                            <constraint firstItem="MmX-Xw-pAj" firstAttribute="trailing" secondItem="57d-me-5IW" secondAttribute="trailing" constant="20" id="dPS-lA-9Fi"/>
+                            <constraint firstItem="MmX-Xw-pAj" firstAttribute="trailing" secondItem="eHD-iv-7qe" secondAttribute="trailing" constant="20" id="nb8-oM-haw"/>
+                            <constraint firstItem="eHD-iv-7qe" firstAttribute="leading" secondItem="MmX-Xw-pAj" secondAttribute="leading" constant="20" id="q73-Bg-2Za"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MmX-Xw-pAj"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="57d-me-5IW" id="H2z-SN-tXZ"/>
+                        <outlet property="titleLabel" destination="eHD-iv-7qe" id="Vm7-sJ-dxo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kP-ph-mZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1442" y="540"/>
+        </scene>
+        <!--ScaleSelectionViewController-->
+        <scene sceneID="Xzp-u8-7S0">
+            <objects>
+                <viewController storyboardIdentifier="ScaleSelectionViewController" title="ScaleSelectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pit-l3-W2H" customClass="ScaleSelectionViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KWk-IP-ACK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Select a Scale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hgB-a2-ulv">
+                                <rect key="frame" x="20" y="95" width="374" height="52"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Kah-4y-RZq">
+                                <rect key="frame" x="20" y="177" width="374" height="481"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CR4-bH-CvA">
+                                <rect key="frame" x="40" y="678" width="334" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="Fahrenheit"/>
+                                    <segment title="Celsius"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedSelectionChanged:" destination="Pit-l3-W2H" eventType="valueChanged" id="ImX-2R-0n5"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.18942599830000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CR4-bH-CvA" firstAttribute="top" secondItem="Kah-4y-RZq" secondAttribute="bottom" constant="20" id="41P-Te-rwu"/>
+                            <constraint firstItem="wq8-PZ-BVJ" firstAttribute="trailing" secondItem="hgB-a2-ulv" secondAttribute="trailing" constant="20" id="MbY-Ug-d5C"/>
+                            <constraint firstItem="wq8-PZ-BVJ" firstAttribute="trailing" secondItem="Kah-4y-RZq" secondAttribute="trailing" constant="20" id="Med-Af-Hkp"/>
+                            <constraint firstItem="CR4-bH-CvA" firstAttribute="leading" secondItem="wq8-PZ-BVJ" secondAttribute="leading" constant="40" id="N53-dQ-A8V"/>
+                            <constraint firstItem="hgB-a2-ulv" firstAttribute="top" secondItem="wq8-PZ-BVJ" secondAttribute="top" constant="75" id="ZH1-9e-zlj"/>
+                            <constraint firstItem="Kah-4y-RZq" firstAttribute="top" secondItem="hgB-a2-ulv" secondAttribute="bottom" constant="30" id="fmK-mI-29U"/>
+                            <constraint firstItem="wq8-PZ-BVJ" firstAttribute="bottom" secondItem="CR4-bH-CvA" secondAttribute="bottom" constant="30" id="hvG-yd-HAo"/>
+                            <constraint firstItem="hgB-a2-ulv" firstAttribute="leading" secondItem="wq8-PZ-BVJ" secondAttribute="leading" constant="20" id="ofI-AI-Qbu"/>
+                            <constraint firstItem="Kah-4y-RZq" firstAttribute="leading" secondItem="wq8-PZ-BVJ" secondAttribute="leading" constant="20" id="sDa-dZ-bJT"/>
+                            <constraint firstItem="wq8-PZ-BVJ" firstAttribute="trailing" secondItem="CR4-bH-CvA" secondAttribute="trailing" constant="40" id="wst-4f-Vnc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wq8-PZ-BVJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Kah-4y-RZq" id="XLM-HL-h2a"/>
+                        <outlet property="titleLabel" destination="hgB-a2-ulv" id="ome-09-ZWw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slF-sb-K4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-654" y="540"/>
+        </scene>
+        <!--GetLocationViewController-->
+        <scene sceneID="hUd-1V-Wmy">
+            <objects>
+                <viewController storyboardIdentifier="GetLocationViewController" title="GetLocationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Ov-Ne-aBe" customClass="GetLocationViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eay-Q7-UkW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="We need your location!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wiY-T6-Hzc">
+                                <rect key="frame" x="20" y="95" width="374" height="51.666666666666657"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kgI-My-3Wd">
+                                <rect key="frame" x="20" y="197" width="374" height="509"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.18942599830000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wiY-T6-Hzc" firstAttribute="leading" secondItem="Gyo-Ta-DEb" secondAttribute="leading" constant="20" id="2H0-2u-6Zg"/>
+                            <constraint firstItem="Gyo-Ta-DEb" firstAttribute="bottom" secondItem="kgI-My-3Wd" secondAttribute="bottom" constant="30" id="FAw-kX-80w"/>
+                            <constraint firstItem="kgI-My-3Wd" firstAttribute="top" secondItem="wiY-T6-Hzc" secondAttribute="bottom" constant="50" id="Htl-wE-z4n"/>
+                            <constraint firstItem="wiY-T6-Hzc" firstAttribute="top" secondItem="Gyo-Ta-DEb" secondAttribute="top" constant="75" id="LIe-bx-Gr6"/>
+                            <constraint firstItem="Gyo-Ta-DEb" firstAttribute="trailing" secondItem="kgI-My-3Wd" secondAttribute="trailing" constant="20" id="Pf0-hu-9cK"/>
+                            <constraint firstItem="kgI-My-3Wd" firstAttribute="leading" secondItem="Gyo-Ta-DEb" secondAttribute="leading" constant="20" id="Xx0-yd-DnP"/>
+                            <constraint firstItem="Gyo-Ta-DEb" firstAttribute="trailing" secondItem="wiY-T6-Hzc" secondAttribute="trailing" constant="20" id="iw5-be-5W3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gyo-Ta-DEb"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="kgI-My-3Wd" id="Gqw-Op-qMO"/>
+                        <outlet property="titleLabel" destination="wiY-T6-Hzc" id="Jjo-i2-Z7M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQS-b4-Vnl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="538.85869565217399"/>
+        </scene>
+        <!--CurrentLocationViewController-->
+        <scene sceneID="O6Z-U6-KdZ">
+            <objects>
+                <viewController storyboardIdentifier="CurrentLocationViewController" title="CurrentLocationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gyB-jf-GHs" customClass="CurrentLocationViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T2f-4d-ktU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jf2-ML-0U8">
+                                <rect key="frame" x="20" y="95" width="374" height="52"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uEG-7W-Snc">
+                                <rect key="frame" x="20" y="197" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cST-eP-g0W">
+                                <rect key="frame" x="20" y="260.66666666666669" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbq-ip-yjK">
+                                <rect key="frame" x="147.66666666666666" y="334.66666666666669" width="118.99999999999997" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Get My Location"/>
+                                <connections>
+                                    <action selector="getMyLocationPressed" destination="gyB-jf-GHs" eventType="touchUpInside" id="It2-RL-fy4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.18942599830000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cbq-ip-yjK" firstAttribute="centerX" secondItem="T2f-4d-ktU" secondAttribute="centerX" id="2eP-ok-fEM"/>
+                            <constraint firstItem="uEG-7W-Snc" firstAttribute="top" secondItem="Jf2-ML-0U8" secondAttribute="bottom" constant="50" id="DWN-2p-iL5"/>
+                            <constraint firstItem="uEG-7W-Snc" firstAttribute="leading" secondItem="xTk-gc-z1p" secondAttribute="leading" constant="20" id="Fhx-rq-bkD"/>
+                            <constraint firstItem="xTk-gc-z1p" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cbq-ip-yjK" secondAttribute="bottom" constant="40" id="ITe-UK-QhQ"/>
+                            <constraint firstItem="xTk-gc-z1p" firstAttribute="trailing" secondItem="uEG-7W-Snc" secondAttribute="trailing" constant="20" id="UK6-jm-zFk"/>
+                            <constraint firstItem="Jf2-ML-0U8" firstAttribute="leading" secondItem="xTk-gc-z1p" secondAttribute="leading" constant="20" id="bQn-vf-PcK"/>
+                            <constraint firstItem="cbq-ip-yjK" firstAttribute="top" secondItem="cST-eP-g0W" secondAttribute="bottom" constant="40" id="bYP-Ak-hLP"/>
+                            <constraint firstItem="xTk-gc-z1p" firstAttribute="trailing" secondItem="cST-eP-g0W" secondAttribute="trailing" constant="20" id="fzm-WK-bZ1"/>
+                            <constraint firstItem="Jf2-ML-0U8" firstAttribute="top" secondItem="xTk-gc-z1p" secondAttribute="top" constant="75" id="i4z-vW-3mn"/>
+                            <constraint firstItem="cST-eP-g0W" firstAttribute="top" secondItem="uEG-7W-Snc" secondAttribute="bottom" constant="30" id="mU1-zD-flp"/>
+                            <constraint firstItem="xTk-gc-z1p" firstAttribute="trailing" secondItem="Jf2-ML-0U8" secondAttribute="trailing" constant="20" id="nJ8-7H-MoJ"/>
+                            <constraint firstItem="cST-eP-g0W" firstAttribute="leading" secondItem="xTk-gc-z1p" secondAttribute="leading" constant="20" id="ryN-w5-0B6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xTk-gc-z1p"/>
+                    </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="cST-eP-g0W" id="W3n-8d-9Sq"/>
+                        <outlet property="titleLabel" destination="Jf2-ML-0U8" id="VM1-Lb-zzO"/>
+                        <outlet property="zipCodeLabel" destination="uEG-7W-Snc" id="x4A-9h-T1j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vFb-bH-nIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="540"/>
+        </scene>
+        <!--SetupDoneViewController-->
+        <scene sceneID="nML-L9-wKS">
+            <objects>
+                <viewController storyboardIdentifier="SetupDoneViewController" title="SetupDoneViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JIp-uf-nT7" customClass="SetupDoneViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BVJ-Zc-aVe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Setup Complete!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="K0s-J7-leI">
+                                <rect key="frame" x="20" y="95" width="374" height="52"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xja-dV-mDZ">
+                                <rect key="frame" x="20" y="197" width="374" height="457"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-td-1an">
+                                <rect key="frame" x="156.66666666666666" y="674" width="100.99999999999997" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="View Weather"/>
+                                <connections>
+                                    <action selector="viewWeatherPressed:" destination="JIp-uf-nT7" eventType="touchUpInside" id="glf-Ja-6Eq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.18942599830000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xja-dV-mDZ" firstAttribute="top" secondItem="K0s-J7-leI" secondAttribute="bottom" constant="50" id="IIr-Y3-y1t"/>
+                            <constraint firstItem="xja-dV-mDZ" firstAttribute="leading" secondItem="yeS-U6-QId" secondAttribute="leading" constant="20" id="JFj-ug-Lej"/>
+                            <constraint firstItem="FlK-td-1an" firstAttribute="centerX" secondItem="BVJ-Zc-aVe" secondAttribute="centerX" id="KfF-Fu-QkP"/>
+                            <constraint firstItem="yeS-U6-QId" firstAttribute="bottom" secondItem="FlK-td-1an" secondAttribute="bottom" constant="30" id="MAn-jF-3JU"/>
+                            <constraint firstItem="K0s-J7-leI" firstAttribute="top" secondItem="yeS-U6-QId" secondAttribute="top" constant="75" id="QSo-9v-XW6"/>
+                            <constraint firstItem="yeS-U6-QId" firstAttribute="trailing" secondItem="xja-dV-mDZ" secondAttribute="trailing" constant="20" id="Z26-2i-cIa"/>
+                            <constraint firstItem="yeS-U6-QId" firstAttribute="trailing" secondItem="K0s-J7-leI" secondAttribute="trailing" constant="20" id="bGs-fb-jTI"/>
+                            <constraint firstItem="FlK-td-1an" firstAttribute="top" secondItem="xja-dV-mDZ" secondAttribute="bottom" constant="20" id="irp-cu-Z94"/>
+                            <constraint firstItem="K0s-J7-leI" firstAttribute="leading" secondItem="yeS-U6-QId" secondAttribute="leading" constant="20" id="ubM-DA-Mkj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yeS-U6-QId"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="xja-dV-mDZ" id="PwI-yx-icq"/>
+                        <outlet property="titleLabel" destination="K0s-J7-leI" id="cXZ-bc-H8r"/>
+                        <segue destination="iuY-Sw-g4N" kind="show" identifier="SetupDoneVC2WeatherVC" id="TZx-Bw-VIA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AeG-jy-2aS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566.6666666666667" y="538.85869565217399"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="k6w-dz-JV6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="iuY-Sw-g4N" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H9w-3b-Ajn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2328" y="551"/>
+        </scene>
+        <!--Setup Page View Controller-->
+        <scene sceneID="Rl0-Wb-5Z2">
+            <objects>
+                <pageViewController storyboardIdentifier="SetupPageViewController" autoresizesArchivedViewToFullSize="NO" title="Setup Page View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="2nF-Mu-5Ub" customClass="SetupPageViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f78-zF-aKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="-214"/>
+        </scene>
+    </scenes>
+</document>
